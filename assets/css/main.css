@@ -483,3 +483,122 @@ footer {
     margin: 10px 0 15px 0;
 }
 
+/* ----------Media Query------------- */
+
+/*1200px and down*/
+@media (max-width: 1200px) {
+
+}
+
+/*992px and down*/
+@media (max-width: 992px) {
+    .parent-project-box {
+        flex-wrap: wrap;
+    }
+
+    .project-box {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .about-text p {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }    
+}
+
+/*768px and down*/
+@media (max-width: 768px) {
+    .hero-section h2 {
+        font-size: 6rem;
+        h3 {
+            font-size: 2.8rem;
+          }
+          
+          #dynamic-text {
+            font-size: 2.8rem; 
+          }
+          
+          h3 .typed-cursor {
+            font-size: 2.8rem;  
+          }
+    }
+
+    .project-box {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .about-row {
+        flex-direction: column;
+        gap: 20px;
+        margin: 24px;
+    }
+
+    .about-text p {
+        font-size: 1.8rem;
+    }    
+
+    figure {
+        display: flex;
+        justify-content: center; 
+        margin: 0;
+    }
+    
+    .about-me-pic {
+        width: 80%; 
+        max-width: 300px; 
+    }
+
+    .parent-project-box {
+        flex-wrap: wrap;
+    }
+
+}
+
+/*480px and down*/
+@media (max-width: 480px) {
+    .hero-section h2 {
+        font-size: 5.8rem;
+        h3 {
+            font-size: 2.5rem;
+          }
+          
+          #dynamic-text {
+            font-size: 2.5rem; 
+          }
+          
+          h3 .typed-cursor {
+            font-size: 2.5rem;  
+          }
+    }
+
+    .about-text p {
+        font-size: 1.8rem;
+    }    
+
+    figure {
+        margin: 0;
+    }
+    
+    .parent-project-box {
+        flex-wrap: wrap;
+    }
+
+    .project-box {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+}
