@@ -1,10 +1,14 @@
 @charset "utf-8";
 
 :root {
-    --background-color: #131730;
-    --primary-color: #13adc7;
+    --background-color: #08080A;
+    --primary-color: #52DBCB;
+    --primary-color-dark: #2ac8b6;
+    --primary-color-dark2: #26b8a7;
+    --gray-font-color: #627673;
     --primary-gradient: linear-gradient(90deg, #945dd6 0%, #6978d1 50%, #13adc7);
     --primary-gradient-dark: linear-gradient(90deg, #7a49b2 0%, #5463ad 50%, #0f8ea3);
+    --gradient-font-color: linear-gradient(90deg, #f0f0f0 0%, #bcbcbc 50%, #627673);
     --font-color: #000;
     --button: 16px 18px;
     --border-small: 4px;
@@ -63,45 +67,19 @@ body {
     z-index: 9999;
 }
 
-.blurry-circle {
-    position: fixed;
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    pointer-events: none;
-    filter: blur(100px);
-    z-index: -1; 
-    top: -50px;
-    left: -50px;
-    background: #945dd6;
-}
-
-.blurry-circle2 {
-    position: fixed;
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    pointer-events: none;
-    filter: blur(100px);
-    z-index: -1; 
-    bottom: -50px;
-    right: -50px;
-    background: var(--primary-color);
-}
-
 .hero-section {
     height: 100dvh;
-    text-align: center;
+    text-align: left;
     place-content: center;
-    position: relative;
-    background: var(--background-color), url(../img/abstract.jpg)center center cover/no-repeat;
+    background: url(../img/background-image-5.jpeg) center center / cover no-repeat;
 
     h2 {
-        font-size: 8rem;
-        line-height: 1.4;
+        font-size: 8.4rem;
+        width: 80%;
+        line-height: 1.1;
         font-family: 'Poppins', Arial, Helvetica, sans-serif;
-        font-weight: 900;
-        background: var(--primary-gradient);
+        font-weight: 600;
+        background: var(--gradient-font-color);
         background-clip: text;
         color: transparent;    
         -webkit-background-clip: text;
@@ -120,23 +98,24 @@ body {
         color: #333;  
       }
       
-      #dynamic-text {
-        color: #13adc7;  
+      .dynamic-text {
+        color: var(--primary-color-dark);  
         font-weight: bold;
         font-size: 3rem; 
       }
       
       h3 .typed-cursor {
-        color: #13adc7;  
+        color: var(--primary-color-dark);  
         font-size: 3rem;  
       }
 
     p {
-        font-size: 2rem;
+        font-size: 2.2rem;
         line-height: 1.4;
         font-family: 400;
         text-wrap: balance;
         margin: 16px 0 70px 0;
+        color: var(--gray-font-color);
     }
 
     a {
@@ -151,14 +130,14 @@ body {
 .primary-button {
     padding: 14px 20px;
     border-radius: 50px;
-    background: var(--primary-gradient);
-    color: var(--button-font);    
+    background: var(--primary-color);
+    color: var(--background-color); 
+    font-weight: 500;   
     margin-right: 20px;
 
     &:hover {
-        background-color: var(--primary-gradient-dark);
-        color: var(--background-color);
-        transition: color 0.25s ease-in-out;
+        background-color: var(--primary-color-dark2);
+        transition: background-color 0.25s ease-in-out;
     }
 }      
 
