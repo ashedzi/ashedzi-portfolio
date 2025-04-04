@@ -5,7 +5,7 @@
     --primary-color: #52DBCB;
     --primary-color-dark: #2ac8b6;
     --primary-color-dark2: #26b8a7;
-    --gray-font-color: #627673;
+    --gray-font-color: #717574;
     --primary-gradient: linear-gradient(90deg, #945dd6 0%, #6978d1 50%, #13adc7);
     --primary-gradient-dark: linear-gradient(90deg, #7a49b2 0%, #5463ad 50%, #0f8ea3);
     --gradient-font-color: linear-gradient(90deg, #f0f0f0 0%, #bcbcbc 50%, #627673);
@@ -46,6 +46,14 @@ body {
 
 .justify-center {
     justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.gap-4 {
+    gap: 4px
 }
 
 .gap-8 {
@@ -217,7 +225,7 @@ body {
     left: 5%;
     width: 90%;
     height: 2px;
-    background: linear-gradient(to right, rgba(0, 0, 255, 0) 0%, rgba(0, 0, 255, 1) 50%, rgba(0, 0, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 255, 0) 0%, #52DBCB 50%, rgba(0, 0, 255, 0) 100%);
 }
 
 .marquee-container {
@@ -240,21 +248,24 @@ body {
 }
 
 .section-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    padding: 10px 20px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.1); 
-    width: 160px;
     margin: auto;
+
+    h3 {
+        font-size: 3.5rem;
+        font-weight: 500;
+    }
+    h3:nth-of-type(1){
+        color: var(--gradient-font-color);
+    }
+    h3:nth-of-type(2){
+        color: var(--primary-color);
+        margin-left: 4px;
+    }
 }
 
-.section-title span {
-    font-size: 2rem;
-    font-weight: 600;
+/* .section-title span {
+    font-size: 1.5rem;
+    font-weight: 400;
     color: var(--primary-color);
     position: relative;
 }
@@ -279,7 +290,7 @@ body {
 
 .section-title::after {
     left: 160px;
-}
+} */
 
 section {
     padding: 100px 0 0 0;
@@ -298,6 +309,14 @@ section::before {
 
 section h3 {
     text-align: left;
+}
+
+.section-title-1 {
+    h3{
+        font-size: 3.5rem;
+        font-weight: 500;
+        color: var(--gradient-font-color);
+    }
 }
 
 .about-me-pic {
