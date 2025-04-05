@@ -1,0 +1,25 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashedzi/ashedzi-portfolio.git"
+  },
+  "keywords": [],
+  "author": "Ashedzi Solomon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashedzi/ashedzi-portfolio/issues"
+  },
+  "homepage": "https://github.com/ashedzi/ashedzi-portfolio#readme",
+  "description": "My updated portfolio",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
