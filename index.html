@@ -262,12 +262,23 @@
                         </div>
                     </div>
                 </section>
-                <section class="last-section">
+                <section class="last-section flex column center">
                     <div class="section-title flex gap-4 center">
                         <h3>Contact</h3>
                         <h3>me</h3>
                     </div>
-                    <p class="contact-me">Don't be shy! Let me help you with that project. You can reach me at</p>
+                    <form class="flex column">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="John Smith" name="name">
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Johnsmith@gmail.com" name="email">
+                        <label for="message">Message</label>
+                        <textarea name="message" placeholder="Write your message here" rows="10" cols="50"></textarea>
+                        <input type="button" value="Submit">
+                    </form>
+                    <div class="contact-me">
+                        <p>Don't be shy! Let me help you with that project.</p>
+                    </div>
                     <div class="flex center gap-20 contact-links">
                         <div class="contact-box">
                             <a href="https://www.linkedin.com/in/ashedzi-solomon-11a256216/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -283,7 +294,7 @@
             </div>
         </main>
         <footer>
-            <p>2025 &copy; Design and Developed by Ashedzi</p>
+            <p>Designed and Developed by Ashedzi</p>
         </footer>   
     </body>
 </html>
