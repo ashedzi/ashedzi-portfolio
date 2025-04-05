@@ -252,7 +252,8 @@ body {
 
     h3 {
         font-size: 3.5rem;
-        font-weight: 500;
+        line-height: 1.2;
+        font-weight: 600;
     }
     h3:nth-of-type(1){
         color: var(--gradient-font-color);
@@ -263,35 +264,6 @@ body {
     }
 }
 
-/* .section-title span {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--primary-color);
-    position: relative;
-}
-
-.section-title::before,
-.section-title::after {
-    content: "";
-    flex: 1;
-    width: 50px;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.1);
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 70px;
-}
-
-.section-title::before {
-    left: -50px;
-}
-
-.section-title::after {
-    left: 160px;
-} */
-
 section {
     padding: 100px 0 0 0;
     position: relative;
@@ -300,7 +272,7 @@ section {
 section::before {
     content: '';
     position: absolute;
-    top: 40px; 
+    top: 80px; 
     left: 10%;
     width: 80%;
     height: 1px;
@@ -311,14 +283,6 @@ section h3 {
     text-align: left;
 }
 
-.section-title-1 {
-    h3{
-        font-size: 3.5rem;
-        font-weight: 500;
-        color: var(--gradient-font-color);
-    }
-}
-
 .about-me-pic {
     height: auto;
     width: 100%;
@@ -327,8 +291,9 @@ section h3 {
 }
 
 .about-text p {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 300;
+    margin-top: 8px;
 }
 
 .about-text p:nth-child(2), .about-text p:nth-child(3) {
@@ -366,7 +331,7 @@ figure {
 
 .project-box {
     border-radius: 4px;
-    padding: 20px;
+    padding: 10px;
     width: calc(25% - 15px);
     margin-bottom: 20px;
 
@@ -375,7 +340,6 @@ figure {
     }
 
     &:hover {
-        border-radius: 10px;
         background-color: rgb(255 255 255 / 8%);
         backdrop-filter: blur(5px);
         transition: background-color 0.25s ease-in-out;
@@ -405,7 +369,7 @@ figure {
 .project-box p:first-of-type {
     font-size: 1.6rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--primary-color-dark);
     margin: 8px 0 4px 0;
     text-align: left;
     line-height: 1.2;
