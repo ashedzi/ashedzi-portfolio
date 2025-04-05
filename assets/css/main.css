@@ -75,11 +75,24 @@ body {
     z-index: 9999;
 }
 
+header {
+    height: 56px;
+    background-color: transparent;
+    padding: 16px 0;
+
+    h1 {
+        line-height: 56px;
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: 'Outfit', 'Inter', Arial, Helvetica, sans-serif;
+        color: var(--primary-color);
+    }
+}
+
 .hero-section {
-    height: 100dvh;
+    height: calc(100dvh - 56px);
     text-align: left;
     place-content: center;
-    background: url(../img/background-image-5.jpeg) center center / cover no-repeat;
 
     h2 {
         font-size: 8.4rem;
@@ -129,6 +142,10 @@ body {
     a {
         text-decoration: none;  
     }
+}
+
+.hero-content {
+    background: url(../img/background-image-5.jpeg) center center / cover no-repeat;
 }
 
 .button {
@@ -577,6 +594,11 @@ footer {
 
 /*480px and down*/
 @media (max-width: 480px) {
+    header {
+        h1 {
+            font-size: 2.4rem;
+        }
+    }
     .hero-section h2 {
         font-size: 5.8rem;
         h3 {
@@ -612,8 +634,7 @@ footer {
                 width: 80%; 
                 max-width: 300px; 
             }
-        }
-        
+        } 
     }
     .parent-project-box {
         flex-wrap: wrap;

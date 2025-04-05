@@ -6,13 +6,11 @@ const scrollIndicator = utils.select('.scroll-indicator');
 const heroSection = utils.select('.hero-section');
 const cursor = utils.select(".cursor");
 
-  // Function to scroll to the next section
-  function scrollToNextSection() {
-    nextSection.scrollIntoView({ behavior: 'smooth' });
-  }
+function scrollToNextSection() {
+nextSection.scrollIntoView({ behavior: 'smooth' });
+}
 
-//   scrollIndicator.addEventListener('click', scrollToNextSection);
-  utils.listen('click', scrollIndicator, scrollToNextSection);
+utils.listen('click', scrollIndicator, scrollToNextSection);
 
 document.addEventListener("DOMContentLoaded", function () {
     let options = {
